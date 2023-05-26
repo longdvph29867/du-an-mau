@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #62d2a2;
+}
+
+
+.slick-dots {
+    bottom: -35px;
+}
+.slick-dots li button::before {
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.slick-dots li.slick-active button:before {
+    color: var(--primary-color);
+}

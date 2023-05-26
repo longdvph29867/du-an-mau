@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/logo-icon.png" type="image/x-icon">
+    <title>food market</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lora:wght@500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- my css -->
+    <link rel="stylesheet" href="./header.css">
+</head>
+
+<body class="font-['Raleway']">
+    <header class="py-0 lg:py-4 bg-white">
+        <div class="
+        header_top 
+        container 
+        mx-auto 
+        flex 
+        justify-between 
+        items-center
+        flex-col
+        pt-4
+        lg:pt-0
+        md:flex-row
+        ">
+            <img class="w-56" src="../image/logo3.png" alt="">
+            <div class="flex items-center">
+                <form action="" class="search_header relative">
+                    <input type="text" placeholder="Tìm sản phẩm">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <button class="btn1 mx-2 hidden sm:block">Đăng nhập</button>
+                <button class="btn1 hidden sm:block">Đăng Ký</button>
+                <!-- <div class="user_header ml-2 relative hidden sm:block">
+                    <img src="../image/user.png" alt="">
+                    <ul class="user_child">
+                        <li><a href="#">Thông tin</a></li>
+                        <li><a href="#">Đăng xuất</a></li>
+                    </ul>
+                </div> -->
+                <div class="cart_header relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="quantity_cart">16</span>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="header_bottom">
+            <div class="
+            container 
+            mx-auto 
+            flex 
+            justify-between 
+            lg:justify-end 
+            items-center 
+            bg-[#62d2a2]
+            lg:bg-white
+            lg:mt-0
+            ">
+                <img class="logo_scroll w-56 mr-auto hidden lg:block" src="../image/logo3.png" alt="">
+                <h3 class="lg:hidden text-lg text-white font-semibold py-2">MENU</h3>
+                <nav class="hidden lg:flex items-center menu">
+                    <ul class="flex">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li class="menu_item ">
+                            <a href="#">Danh mục <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="child_menu">
+                                <li><a href="#">Thịt</a></li>
+                                <li><a href="#">Cá</a></li>
+                                <li><a href="#">Hoa quả</a></li>
+                                <li><a href="#">Sữa</a></li>
+                                <li><a href="#">Đồ Khô</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="btn_menu_mobile lg:hidden">
+                    <button class="text-white text-2xl">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--  -->
+            <nav class="lg:hidden flex flex-col items-center menu menu_mobile">
+                <ul class="flex flex-col w-full text-center">
+                    <li><a href="#">Trang chủ</a></li>
+                    <!-- show -->
+                    <li class="menu_item_mobile ">
+                        <a id="showMenuChildMobile" href="javascript:void(0);">Danh mục <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="child_menu_mobile">
+                            <li><a href="#">Thịt</a></li>
+                            <li><a href="#">Cá</a></li>
+                            <li><a href="#">Hoa quả</a></li>
+                            <li><a href="#">Sữa</a></li>
+                            <li><a href="#">Đồ Khô</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li class="flex justify-center pb-2 items-center">
+                        <!-- <button class="btn1 mx-2 ">Đăng nhập</button>
+                        <button class="btn1 ">Đăng Ký</button> -->
+                        <div class="user_header">
+                            <img src="../image/user.png" alt="">
+                        </div>
+                        <button class="btn2 mx-2 ">Thông tin</button>
+                        <button class="btn2 ">Đăng xuất</button>
+                    </li>
+                </ul>
+            </nav>
+            <!--  -->
+        </div>
+    </header>
+    <div class="h-[2000px] bg-slate-500">
+        123
+    </div>
+
+    <script>
+        const menuMobile = document.querySelector('.header_bottom');
+        const btnMenuMobile = document.querySelector('.btn_menu_mobile button');
+        const menuMobileChild = document.querySelector('.menu_item_mobile');
+        const btnMenuMobileChild = document.querySelector('#showMenuChildMobile');
+        const headerEl = document.querySelector('header');
+
+        btnMenuMobile.onclick = () => {
+            menuMobile.classList.toggle('show_menu_mobile')
+        }
+        btnMenuMobileChild.onclick = () => {
+            menuMobileChild.classList.toggle('show_child_menu')
+        }
+        window.addEventListener('click', (e) => {
+            if(!menuMobile.contains(e.target)) {
+                menuMobile.classList.remove('show_menu_mobile')
+            }
+        })
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 80) {
+                headerEl.classList.add('scrollHeader')
+            }
+            else {
+                headerEl.classList.remove('scrollHeader')
+            }
+        })
+
+    </script>
+</body>
+
+</html>

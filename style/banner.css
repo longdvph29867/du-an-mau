@@ -1,0 +1,28 @@
+
+.banner {
+
+}
+.banner img {
+    filter: brightness(105%);
+    height: 550px;
+    object-fit: cover;
+    width: 100%;
+}
+.banner .slick-arrow {
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s;
+}
+.banner .slick-prev {
+    left: 5%;
+}
+.banner .slick-next {
+    right: 7%;
+}
+.banner .slick-prev::before,
+.banner .slick-next::before {
+    font-size: 42px;
+}
+.banner_slide:hover .slick-arrow {
+    opacity: .8;
+}
