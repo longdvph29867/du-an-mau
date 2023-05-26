@@ -14,6 +14,7 @@
     overflow: hidden;
     max-width: 286px;
     background-color: #fff;
+    width: 100%;
 }
 .product_item .product_img {
     overflow: hidden;
@@ -84,6 +85,10 @@
 .top_order_number p {
     color: #fff;
     font-weight: 600;
+}
+
+.our_products .product_item {
+    margin: 0 auto;
 }
 
 
