@@ -29,6 +29,10 @@ body {
     border: 1px solid var(--primary-color);
     transition: all .3s;
 }
+.btn1:hover {
+    color: var(--primary-color);
+    background-color: #fff;
+}
 .btn2 {
     color: var(--primary-color);
     font-size: 15px;

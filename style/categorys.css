@@ -1,8 +1,14 @@
 :root {
     --primary-color: #62d2a2;
 }
-
-
+.categorys img {
+    height: 135px;
+    
+}
+.categorys h4 {
+    font-size: 22px;
+    
+}
 .slick-dots {
     bottom: -35px;
 }
